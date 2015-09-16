@@ -1,0 +1,10 @@
+<h1><%= @artist.name %></h1>
+
+
+<h1>Add an album</h1>
+<%= form_for [@artist, @album] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>
